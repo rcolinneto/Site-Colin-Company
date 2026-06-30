@@ -69,12 +69,12 @@ export default function ComoFunciona() {
     <section
       ref={ref}
       id="como-funciona"
-      className="py-24 md:py-36"
+      className="py-12 md:py-36"
       aria-labelledby="como-funciona-headline"
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Header */}
-        <div className="max-w-2xl mb-16">
+        <div className="max-w-2xl mb-10 md:mb-16">
           <div className="animate-on-scroll mb-4">
             <span
               className="tag"
@@ -118,8 +118,13 @@ export default function ComoFunciona() {
         <div className="animate-on-scroll flex items-center gap-6 mb-10" aria-label="Legenda do processo">
           <div className="flex items-center gap-2">
             <span
-              className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium"
-              style={{ backgroundColor: "rgba(46,204,113,0.1)", color: "#2ECC71", border: "1px solid rgba(46,204,113,0.25)" }}
+              style={{
+                display: "inline-flex", alignItems: "center", gap: "5px",
+                padding: "5px 12px", borderRadius: "999px", lineHeight: 1,
+                fontSize: "0.75rem", fontWeight: 500, whiteSpace: "nowrap",
+                backgroundColor: "rgba(46,204,113,0.1)", color: "#2ECC71",
+                border: "1px solid rgba(46,204,113,0.25)",
+              }}
             >
               🤖 Auto
             </span>
@@ -127,8 +132,13 @@ export default function ComoFunciona() {
           </div>
           <div className="flex items-center gap-2">
             <span
-              className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium"
-              style={{ backgroundColor: "rgba(242,250,245,0.06)", color: "#F2FAF5", border: "1px solid rgba(212,230,218,0.2)" }}
+              style={{
+                display: "inline-flex", alignItems: "center", gap: "5px",
+                padding: "5px 12px", borderRadius: "999px", lineHeight: 1,
+                fontSize: "0.75rem", fontWeight: 500, whiteSpace: "nowrap",
+                backgroundColor: "rgba(212,230,218,0.08)", color: "#F2FAF5",
+                border: "1px solid rgba(212,230,218,0.25)",
+              }}
             >
               🧠 Humano
             </span>
@@ -162,12 +172,15 @@ export default function ComoFunciona() {
                   >
                     <div className="flex items-center gap-3 mb-3">
                       <span
-                        className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium"
-                        style={
-                          isAuto
+                        style={{
+                          display: "inline-flex", alignItems: "center", gap: "5px",
+                          padding: "5px 12px", borderRadius: "999px", lineHeight: 1,
+                          fontSize: "0.75rem", fontWeight: 500, whiteSpace: "nowrap",
+                          ...(isAuto
                             ? { backgroundColor: "rgba(46,204,113,0.1)", color: "#2ECC71", border: "1px solid rgba(46,204,113,0.25)" }
-                            : { backgroundColor: "rgba(242,250,245,0.06)", color: "#F2FAF5", border: "1px solid rgba(212,230,218,0.2)" }
-                        }
+                            : { backgroundColor: "rgba(212,230,218,0.08)", color: "#F2FAF5", border: "1px solid rgba(212,230,218,0.25)" }
+                          ),
+                        }}
                       >
                         {isAuto ? "🤖 Auto" : "🧠 Humano"}
                       </span>

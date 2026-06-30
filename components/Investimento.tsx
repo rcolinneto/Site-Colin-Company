@@ -43,13 +43,13 @@ export default function Investimento() {
     <section
       ref={ref}
       id="investimento"
-      className="py-24 md:py-36"
+      className="py-12 md:py-36"
       style={{ backgroundColor: "rgba(255,255,255,0.015)" }}
       aria-labelledby="investimento-headline"
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Header */}
-        <div className="max-w-2xl mb-16 text-center mx-auto">
+        <div className="max-w-2xl mb-10 md:mb-16 text-center mx-auto">
           <div className="animate-on-scroll mb-4">
             <span
               className="tag"

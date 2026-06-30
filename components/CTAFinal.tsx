@@ -30,7 +30,7 @@ export default function CTAFinal() {
     <section
       ref={ref}
       id="contato"
-      className="py-24 md:py-36 relative overflow-hidden"
+      className="py-12 md:py-36 relative overflow-hidden"
       style={{ backgroundColor: "#1A6B3C" }}
       aria-labelledby="cta-headline"
     >
