@@ -63,6 +63,36 @@ const services = [
     },
   },
   {
+    id: "landing",
+    featured: false,
+    badge: "Sob demanda",
+    badgeBg: "rgba(234,179,8,0.08)",
+    badgeColor: "#B8891A",
+    badgeBorder: "rgba(234,179,8,0.25)",
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <rect x="3" y="2" width="18" height="20" rx="2" stroke="#22A05A" strokeWidth="1.5"/>
+        <path d="M7 8h10M7 12h7" stroke="#22A05A" strokeWidth="1.5" strokeLinecap="round"/>
+        <rect x="7" y="15.5" width="10" height="3" rx="1.5" stroke="#22A05A" strokeWidth="1.3"/>
+      </svg>
+    ),
+    title: "Criação de Landing Pages",
+    description:
+      "Toda campanha de tráfego (orgânico ou pago) precisa de um destino que converte. Criamos páginas de alta conversão integradas à sua estratégia de conteúdo — não como um produto avulso, mas como parte do Método Raiz.",
+    features: [
+      "Páginas otimizadas para conversão (CRO)",
+      "Copy estratégico alinhado ao Método Raiz",
+      "Design responsivo mobile-first",
+      "Integração com ferramentas de captura",
+      "Testes A/B de headline e CTA",
+    ],
+    accent: "#22A05A",
+    cardStyle: {
+      background: "rgba(255,255,255,0.02)",
+      border: "1px solid rgba(212,230,218,0.12)",
+    },
+  },
+  {
     id: "pago",
     featured: false,
     badge: "Complementar",
@@ -167,7 +197,7 @@ export default function Servicos() {
         </div>
 
         {/* Cards */}
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6">
           {services.map((service, i) => (
             <article
               key={service.id}

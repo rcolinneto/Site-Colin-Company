@@ -294,6 +294,27 @@ export default function Investimento() {
             </div>
           </div>
         </div>
+
+        {/* Landing Page note */}
+        <div
+          className="animate-on-scroll max-w-4xl mx-auto mt-6 px-5 py-4 rounded-xl flex items-start gap-3"
+          style={{ backgroundColor: "rgba(234,179,8,0.06)", border: "1px solid rgba(234,179,8,0.18)" }}
+        >
+          <span style={{ fontSize: "1rem", lineHeight: 1, marginTop: "1px", flexShrink: 0 }} aria-hidden="true">💡</span>
+          <p style={{ color: "#6B7D74", fontSize: "0.85rem", lineHeight: "1.6" }}>
+            <span style={{ color: "#F2FAF5", fontWeight: 500 }}>Precisa de uma Landing Page para uma campanha específica?</span>{" "}
+            Pode ser incluída no seu plano mensal ou contratada à parte —{" "}
+            <a
+              href="https://wa.me/5547997398936?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Colin%20Co.%20Gostaria%20de%20saber%20mais%20sobre%20como%20voc%C3%AAs%20podem%20ajudar%20minha%20marca%20a%20crescer."
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#2ECC71", textDecoration: "underline", textUnderlineOffset: "3px" }}
+            >
+              fala com a gente
+            </a>
+            .
+          </p>
+        </div>
       </div>
     </section>
   );

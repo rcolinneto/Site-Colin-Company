@@ -226,9 +226,31 @@ export default function ComoFunciona() {
           </div>
         </div>
 
+        {/* Landing Page optional step */}
+        <div
+          className="animate-on-scroll mt-8 px-5 py-4 rounded-xl flex items-start gap-3"
+          style={{ backgroundColor: "rgba(234,179,8,0.05)", border: "1px dashed rgba(234,179,8,0.2)" }}
+        >
+          <span
+            style={{
+              display: "inline-flex", alignItems: "center", gap: "5px",
+              padding: "3px 10px", borderRadius: "999px", lineHeight: 1,
+              fontSize: "0.7rem", fontWeight: 500, whiteSpace: "nowrap", flexShrink: 0, marginTop: "2px",
+              backgroundColor: "rgba(212,230,218,0.08)", color: "#F2FAF5",
+              border: "1px solid rgba(212,230,218,0.25)",
+            }}
+          >
+            🧠 Humano
+          </span>
+          <p style={{ color: "#6B7D74", fontSize: "0.85rem", lineHeight: "1.6" }}>
+            <span style={{ color: "#F2FAF5", fontWeight: 500 }}>Etapa opcional: Landing Page.</span>{" "}
+            Quando uma campanha (orgânica ou paga) precisa de uma página de conversão dedicada, nossa equipe cria e publica a landing page integrada ao calendário editorial — sem sair do fluxo do Método Raiz.
+          </p>
+        </div>
+
         {/* Bottom note */}
         <div
-          className="animate-on-scroll mt-12 p-6 rounded-2xl"
+          className="animate-on-scroll mt-6 p-6 rounded-2xl"
           style={{ backgroundColor: "rgba(26,107,60,0.06)", border: "1px solid rgba(26,107,60,0.2)" }}
         >
           <div className="flex flex-col md:flex-row md:items-center gap-4">
